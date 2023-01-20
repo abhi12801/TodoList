@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3 form-group" >
+      <label for="exampleInputEmail1" class="form-label">Title</label>
+      <input type="text" [(ngModel)]="title"  name="title" class="form-control" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Description</label>
+      <input type="text"  [(ngModel)]="desc"  name="desc"class="form-control" >
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>
